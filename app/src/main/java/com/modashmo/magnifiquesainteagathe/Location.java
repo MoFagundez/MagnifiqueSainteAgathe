@@ -2,7 +2,7 @@ package com.modashmo.magnifiquesainteagathe;
 
 /**
  * Magnifique Sainte-Agathe
- * Created by Mauricio on May 14, 2017
+ * Created by Mauricio recyclerViewClickListener May 14, 2017
  * <p>
  * Udacity Android Basics Nanodegree
  * Project 6: Tour App

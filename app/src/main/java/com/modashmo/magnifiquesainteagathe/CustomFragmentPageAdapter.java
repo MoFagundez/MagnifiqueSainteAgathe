@@ -7,7 +7,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 /**
  * Magnifique Sainte-Agathe
- * Created by Mauricio on May 14, 2017
+ * Created by Mauricio recyclerViewClickListener May 14, 2017
  * <p>
  * Udacity Android Basics Nanodegree
  * Project 6: Tour App
@@ -43,7 +43,7 @@ class CustomFragmentPageAdapter extends FragmentPagerAdapter {
 
     @Override
     public CharSequence getPageTitle(int position) {
-        // Generate title based on item position
+        // Generate title based recyclerViewClickListener item position
         return tabTitles[position];
     }
 }
