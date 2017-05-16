@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/StandardCard">
+
+    <RelativeLayout
+        style="@style/StandardCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layout_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image_item"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image_placeholder" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:layout_toRightOf="@id/layout_image"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/margin_card_standard"
+                android:layout_marginStart="@dimen/margin_card_standard"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:textAllCaps="true"
+                android:textSize="@dimen/font_size_card_title"
+                android:textStyle="bold"
+                tools:text="This is the title" />
+
+            <TextView
+                android:id="@+id/description_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="start"
+                android:layout_marginLeft="@dimen/margin_card_standard"
+                android:layout_marginStart="@dimen/margin_card_standard"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_size_card_description"
+                tools:text="Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression." />
+
+            <TextView
+                android:id="@+id/address_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/margin_card_standard"
+                android:layout_marginStart="@dimen/margin_card_standard"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:textSize="@dimen/font_size_card_description"
+                tools:text="This is the address" />
+
+            <TextView
+                android:id="@+id/distance_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/margin_card_standard"
+                android:layout_marginStart="@dimen/margin_card_standard"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:textSize="@dimen/font_size_card_description"
+                android:textStyle="italic"
+                tools:text="This is the location" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

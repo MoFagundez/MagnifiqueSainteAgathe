@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Magnifique Sainte Agathe</string>
+    <string name="shopping_fragment">SHOPPING</string>
+    <string name="events_fragment">EVENTS</string>
+    <string name="historic_places_fragment">HISTORIC PLACES</string>
+    <string name="food_fun_fragment">FOOD &amp; FUN</string>
+</resources>
