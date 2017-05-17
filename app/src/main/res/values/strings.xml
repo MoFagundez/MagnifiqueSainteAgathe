@@ -4,4 +4,8 @@
     <string name="events_fragment">EVENTS</string>
     <string name="historic_places_fragment">HISTORIC PLACES</string>
     <string name="food_fun_fragment">FOOD &amp; FUN</string>
+    <string name="tool_title">This is the title</string>
+    <string name="tool_description">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression</string>
+    <string name="tool_address">This is the address</string>
+    <string name="tool_distance">This is the distance</string>
 </resources>

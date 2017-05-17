@@ -15,7 +15,7 @@ import java.util.Arrays;
 
 /**
  * Magnifique Sainte-Agathe
- * Created by Mauricio recyclerViewClickListener May 14, 2017
+ * Created by Mauricio on May 14, 2017
  * <p>
  * Udacity Android Basics Nanodegree
  * Project 6: Tour App
@@ -54,16 +54,17 @@ public class EventsFragment extends Fragment {
 
     public void initialiseData() {
         // Create instances of Location class. This would be ideally fetched remotely via RESTful API, however this is not the intent of this exercise.
-        Location exampleLocation = new Location("Schooly McSchoolface", "A school, with teachers and students, where they spend the day doing school things.",
-                "123 School Way", "3.7 Km", R.drawable.image_placeholder);
-        Location exampleLocation2 = new Location("Shopping McSpendface", "A shopping where people spend the money they don't have recyclerViewClickListener stuff they don't need in order to fulfill their hopeless dreams.",
-                "123 Loser Drive", "9.3 Km", R.drawable.image_placeholder);
-        Location exampleLocation3 = new Location("Museum McOldface", "A museum with a bunch of old stuff however important history of our old society.", "123 Medieval Place",
-                "1.2 Km", R.drawable.image_placeholder);
-        Location exampleLocation4 = new Location("Gas McStationface", "A place where people like to feed their vroom vrooms.", "123 Pollution Avenue",
-                "10.5 Km", R.drawable.image_placeholder);
-        Location exampleLocation5 = new Location("Botchoco McFluffyface", "A place where botchocos like to hangout and do botchoquices. Rafael owns the place.", "123 McFaggot Street",
-                "0.7 Km", R.drawable.image_placeholder);
+        // strings.xml were also not used ON PURPOSE for the creation of he objects, given the first statement above.
+        Location exampleLocation = new Location("Festival d’été", "Every year, the Festival d’été attracts over one million festivalgoers to Sainte-Agathe's historic district for concerts.",
+                "Downtown", "1.1 Km", R.drawable.summer);
+        Location exampleLocation2 = new Location("Grands Feux Loto", "From the bank of the Red River, enjoy the magnificent show of the Grands Feux Loto-Sainte-Agathe.",
+                "Red River Bank", "3.0 Km", R.drawable.fireworks);
+        Location exampleLocation3 = new Location("Nouvelle-France", "An entertaining atmosphere, numerous activities for gourmets and 400 shows, reenactments and lectures.",
+                "Downtown", "1.9 Km", R.drawable.france);
+        Location exampleLocation4 = new Location("Carnaval", "Come experience one of the world's largest winter carnivals in beautiful Sainte-Agathe.",
+                "Downtown", "1.8 Km", R.drawable.winter);
+        Location exampleLocation5 = new Location("Wine Festival", "On the menu for this major public event: selection of Bordeaux wines, savoury foods grown or made in Sainte-Agathe.",
+                "4479 West Portage Avenue", "12.8 Km", R.drawable.wine);
 
         // Initiate an ArrayList with the objects created above
         locationsArray = new ArrayList<>(Arrays.asList(exampleLocation, exampleLocation2, exampleLocation3, exampleLocation4, exampleLocation5));

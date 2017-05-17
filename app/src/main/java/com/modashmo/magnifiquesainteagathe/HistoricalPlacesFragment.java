@@ -15,17 +15,17 @@ import java.util.Arrays;
 
 /**
  * Magnifique Sainte-Agathe
- * Created by Mauricio recyclerViewClickListener May 14, 2017
+ * Created by Mauricio on May 14, 2017
  * <p>
  * Udacity Android Basics Nanodegree
  * Project 6: Tour App
  */
-public class HistoricPlacesFragment extends Fragment {
+public class HistoricalPlacesFragment extends Fragment {
 
     private ArrayList<Location> locationsArray;
     private RecyclerView recyclerView;
 
-    public HistoricPlacesFragment() {
+    public HistoricalPlacesFragment() {
         // Required empty public constructor
     }
 
@@ -52,16 +52,17 @@ public class HistoricPlacesFragment extends Fragment {
 
     public void initialiseData() {
         // Create instances of Location class. This would be ideally fetched remotely via RESTful API, however this is not the intent of this exercise.
-        Location exampleLocation = new Location("Schooly McSchoolface", "A school, with teachers and students, where they spend the day doing school things.",
-                "123 School Way", "3.7 Km", R.drawable.image_placeholder);
-        Location exampleLocation2 = new Location("Shopping McSpendface", "A shopping where people spend the money they don't have recyclerViewClickListener stuff they don't need in order to fulfill their hopeless dreams.",
-                "123 Loser Drive", "9.3 Km", R.drawable.image_placeholder);
-        Location exampleLocation3 = new Location("Museum McOldface", "A museum with a bunch of old stuff however important history of our old society.", "123 Medieval Place",
-                "1.2 Km", R.drawable.image_placeholder);
-        Location exampleLocation4 = new Location("Gas McStationface", "A place where people like to feed their vroom vrooms.", "123 Pollution Avenue",
-                "10.5 Km", R.drawable.image_placeholder);
-        Location exampleLocation5 = new Location("Botchoco McFluffyface", "A place where botchocos like to hangout and do botchoquices. Rafael owns the place.", "123 McFaggot Street",
-                "0.7 Km", R.drawable.image_placeholder);
+        // strings.xml were also not used ON PURPOSE for the creation of he objects, given the first statement above.
+        Location exampleLocation = new Location("Old Sainte-Agathe", "History is everywhere in Sainte-Agathe, down on every street, at every monument and inside every historical building.",
+                "Downtown", "0.2 Km", R.drawable.walls);
+        Location exampleLocation2 = new Location("French & British", "Explore the visible signs of the two major nations who built the city and region of Sainte-Agathe.",
+                "12 Rivier Drive", "1.3 Km", R.drawable.french_british);
+        Location exampleLocation3 = new Location("The Citadel", "A key part of the city's fortifications, the star-shaped Citadel showcases Sainte-Agathe's military history.",
+                "69 Hiver Place", "1.7 Km", R.drawable.citadel);
+        Location exampleLocation4 = new Location("New France Festival", "Early August is the time to be whisked back to the days of New France in the authentic surroundings of Sainte-Agathe.",
+                "Downtown", "0.5 Km", R.drawable.new_france);
+        Location exampleLocation5 = new Location("Religious Tourism", "Churches are to Sainte-Agathe what castles are to Europe: architectural marvels.",
+                "666 McDermot Street", "7.1 Km", R.drawable.religious);
 
         // Initiate an ArrayList with the objects created above
         locationsArray = new ArrayList<>(Arrays.asList(exampleLocation, exampleLocation2, exampleLocation3, exampleLocation4, exampleLocation5));

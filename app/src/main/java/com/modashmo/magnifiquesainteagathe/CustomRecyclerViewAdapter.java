@@ -12,12 +12,11 @@ import java.util.ArrayList;
 
 /**
  * Magnifique Sainte-Agathe
- * Created by Mauricio recyclerViewClickListener May 14, 2017
+ * Created by Mauricio on May 14, 2017
  * <p>
  * Udacity Android Basics Nanodegree
  * Project 6: Tour App
  */
-
 class CustomRecyclerViewAdapter extends RecyclerView.Adapter<CustomRecyclerViewAdapter.LocationViewHolder> {
 
     private OnItemClickListener listener;

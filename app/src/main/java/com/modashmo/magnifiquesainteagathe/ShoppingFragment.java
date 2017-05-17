@@ -14,7 +14,7 @@ import java.util.Arrays;
 
 /**
  * Magnifique Sainte-Agathe
- * Created by Mauricio recyclerViewClickListener May 14, 2017
+ * Created by Mauricio on May 14, 2017
  * <p>
  * Udacity Android Basics Nanodegree
  * Project 6: Tour App
@@ -51,16 +51,17 @@ public class ShoppingFragment extends Fragment {
 
     public void initialiseData() {
         // Create instances of Location class. This would be ideally fetched remotely via RESTful API, however this is not the intent of this exercise.
-        Location exampleLocation = new Location("Schooly McSchoolface", "A school, with teachers and students, where they spend the day doing school things.",
-                "123 School Way", "3.7 Km", R.drawable.image_placeholder);
-        Location exampleLocation2 = new Location("Shopping McSpendface", "A shopping where people spend the money they don't have recyclerViewClickListener stuff they don't need in order to fulfill their hopeless dreams.",
-                "123 Loser Drive", "9.3 Km", R.drawable.image_placeholder);
-        Location exampleLocation3 = new Location("Museum McOldface", "A museum with a bunch of old stuff however important history of our old society.", "123 Medieval Place",
-                "1.2 Km", R.drawable.image_placeholder);
-        Location exampleLocation4 = new Location("Gas McStationface", "A place where people like to feed their vroom vrooms.", "123 Pollution Avenue",
-                "10.5 Km", R.drawable.image_placeholder);
-        Location exampleLocation5 = new Location("Botchoco McFluffyface", "A place where botchocos like to hangout and do botchoquices. Rafael owns the place.", "123 McFaggot Street",
-                "0.7 Km", R.drawable.image_placeholder);
+        // strings.xml were also not used ON PURPOSE for the creation of he objects, given the first statement above.
+        Location exampleLocation = new Location("Farmer's Market", "Are you passionate about supporting local? Do you love a good farmers’ market?  This is the place for you!",
+                "12 School Way", "3.7 Km", R.drawable.farmers);
+        Location exampleLocation2 = new Location("Laurier Mall", "265 stores showcasing the latest fashion, tech and lifestyle trends, 35 assorted restaurants and many special events.",
+                "1669 La Salle Drive", "9.3 Km", R.drawable.laurier);
+        Location exampleLocation3 = new Location("Shopping Beauport", "In the heart of beautiful Sainte-Agathe, it offers a distinguished contemporary brands and unique boutiques.",
+                "589 Hampshire Avenue", "1.2 Km", R.drawable.beauport);
+        Location exampleLocation4 = new Location("Galleria Centre", "Your community shopping centre. Connect. Discover. Shop.",
+                "1212B Pollution Avenue", "10.5 Km", R.drawable.galleria);
+        Location exampleLocation5 = new Location("Botchoco", "Botchoco Mall highlights a dynamic mix of popular, brand name and specialty retail in one convenient, easily accessible location.",
+                "2424 McFluffy Street", "0.7 Km", R.drawable.botchoco);
 
         // Initiate an ArrayList with the objects created above
         locationsArray = new ArrayList<>(Arrays.asList(exampleLocation, exampleLocation2, exampleLocation3, exampleLocation4, exampleLocation5));

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="margin_card_standard">8dp</dimen>
-    <dimen name="margin_card_short">4dp</dimen>
+    <dimen name="margin_card_standard">16dp</dimen>
+    <dimen name="margin_card_short">8dp</dimen>
     <dimen name="font_size_card_title">18sp</dimen>
     <dimen name="font_size_card_description">12sp</dimen>
+    <dimen name="card_width">110dp</dimen>
+    <dimen name="card_height">130dp</dimen>
 </resources>
